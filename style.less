@@ -1,0 +1,65 @@
+@logoWidth: 400px;
+@logoHeight: @logoWidth*.3260;
+
+.logo{
+    width: @logoWidth;
+    height: @logoHeight;
+    overflow: hidden;
+    font-family: "Arial";
+}
+
+.symbol{
+    width: @logoHeight*.666666;
+    height: @logoHeight*.666666;
+    background-color: #000;
+    border-radius: @logoHeight*.13333;
+    position:relative;
+    float:left;
+    margin-right: @logoHeight*.16666; 
+}
+
+.symbol:before{
+    @border: @logoHeight*.066666;
+    display:block;
+    content: "";
+    background-color:#FFF;
+    position:absolute;
+    left: @border;
+    top: @border;
+    right: @border;
+    bottom: @border;
+    border-radius: @logoHeight*.083333;
+    border-top-left-radius: 100%;
+}
+
+.symbol:after {
+    color: #FFF;
+    content:"★";
+    display: block;
+    font-size:@logoHeight*.13333;
+    left: @logoHeight*.05;
+    top: @logoHeight*.05;
+    position:absolute;
+}
+
+.nome{
+    font-size: @logoHeight*.68947;
+    float:left;
+    line-height: 105%;
+}
+
+.slogan {
+    font-size: @logoHeight*.233333;
+    float:right;
+    padding-right: @logoHeight*.05263;
+}
+
+.wrapper {
+  width: @logoWidth;
+  height: @logoHeight;
+  margin-left: @logoWidth/2*-1;
+  margin-top: @logoHeight/2*-1;
+  position: absolute;
+  left:50%;
+  top:50%;
+}
